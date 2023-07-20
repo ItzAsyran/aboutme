@@ -1,25 +1,33 @@
-@font-face {
-  font-family: 'SF Pro Display';
-  src: url('fonts/SF-Pro-Display-Regular.otf') format('opentype');
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 body {
-    background-color: #222222;
+    background-color: #4C4652;
     color: #FFFFFF;
-    opacity: 0;
-    animation: fade-in 1s;
-    opacity: 1;
 }
 
-@keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      
-    }
+  .overlay {
+    /* Your overlay styles here */
+    animation: fadeIn 2s;
+    opacity: 1;
   }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s ease; /* Apply the fade-out animation */
+    opacity: 0; /* Ensure opacity remains at 0 after animation */
+  }  
 
 .container {
     display: flex;
@@ -33,33 +41,12 @@ body {
     height: 250px;
     border-radius: 50%;
     margin-right: 10%;
-    /* Set initial box shadow to white */
-    box-shadow: 0px 0px 100px rgba(183, 204, 209, 1), 0px 0px 50px #44503D;
-    /* Create a pulsing effect using a CSS animation */
-    animation: pulse 5s infinite;
+	margin-left: 10%;
   }
-  
-  /* Define the pulse animation */
-  @keyframes pulse {
-    0% {
-      /* Start with white box shadow */
-      box-shadow: 0px 0px 100px rgba(183, 204, 209, 1), 0px 0px 50px #44503D;
-    }
-    50% {
-      /* Change box shadow to green */
-      box-shadow: 0px 0px 100px rgba(76, 88, 64, 1), 0px 0px 50px #44503D;
-    }
-    100% {
-      /* Return to white box shadow */
-      box-shadow: 0px 0px 100px rgba(183, 204, 209, 1), 0px 0px 50px #44503D;
-    }
-  }
-  
-  
   
   .text {
     text-align: left;
-    font-family: sans-serif;
+    font-family: "Inter";
   }
   
   h1 {
@@ -75,19 +62,19 @@ body {
   }
 
   #job {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 40px;
-    line-height: 48px;
-    color: #929292;
-    margin-bottom: 3vh;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 48px;
+	color: #929292;
+	margin-bottom: 3vh;
   }
 
   #name {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 900;
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 3vh;
@@ -109,7 +96,7 @@ body {
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
-    font-family: 'SF Pro Display';
+    font-family: 'Inter';
     font-style: normal;
     cursor: default;
     z-index: 10001;
