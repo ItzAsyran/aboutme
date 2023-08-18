@@ -5,9 +5,7 @@
 
 body {
     color: #FFFFFF;
-    background: url(https://static.myfigurecollection.net/upload/pictures/2018/01/09/1898432.jpeg);
-    backdrop-filter: blur(21px) brightness(0.54);
-    border-radius: 1rem;
+    background: #4C4652;
 }
 
   #pfp {
