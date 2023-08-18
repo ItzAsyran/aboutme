@@ -4,10 +4,18 @@
 }
 
 body {
-    background-color: #4C4652;
     color: #FFFFFF;
+    background: url(https://static.myfigurecollection.net/upload/pictures/2018/01/09/1898432.jpeg);
+    backdrop-filter: blur(21px) brightness(0.54);
+    border-radius: 1rem;
 }
 
+  #pfp {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
   .overlay {
     /* Your overlay styles here */
     animation: fadeIn 2s;
@@ -21,7 +29,8 @@ body {
   
   @keyframes fadeOut {
     from { opacity: 1; }
-    to { opacity: 0; }
+    to { opacity: 0;
+          filter:blur(10px) }
   }
   
   .fade-out {
@@ -41,7 +50,7 @@ body {
     height: 250px;
     border-radius: 50%;
     margin-right: 10%;
-	margin-left: 10%;
+	  margin-left: 10%;
   }
   
   .text {
@@ -65,7 +74,7 @@ body {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 300;
-	font-size: 40px;
+	font-size: 2rem;
 	line-height: 48px;
 	color: #929292;
 	margin-bottom: 3vh;
@@ -75,16 +84,32 @@ body {
     font-family: 'Inter';
     font-style: bold;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 2.4rem;
     line-height: 48px;
     margin-bottom: 3vh;
+    animation: bold 2s;
+  }
+
+  @keyframes bold {
+    0% {
+      font-weight: 100;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+      font-weight: 100;
+    }
+    100% {
+      opacity: 1;
+      font-weight: 900;
+    }
   }
 
   #desc {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.6rem;
     line-height: 38px;
   }
   
@@ -93,7 +118,7 @@ body {
     top: 3%;
     right: 10%;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 38px;
     color: #FFFFFF;
     font-family: 'Inter';
@@ -109,7 +134,7 @@ body {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 38px;
     cursor: pointer;
     z-index: 10001;
@@ -124,13 +149,13 @@ body {
     .aboutme {
       top: 3%;
       left: 5%;
-      font-size: 25px;
+      font-size: 3vw;
     }
   
     .social {
       top: 3%;
       right: 5%;
-      font-size: 25px;
+      font-size: 3vw;
     }
 
     .container {
@@ -142,20 +167,22 @@ body {
       justify-content: center;
       align-items: center;
       width: auto;
-      height: 10%;
+      height: 10vw;
     }
 
     #job {
       text-align: center;
       padding-top: 5vh;
+      font-size: 6vw;
     }
 
     #name {
       text-align: center;
+      font-size: 5vw;
     }
 
     #desc {
       text-align: center;
-      font-size: 20px;
+      font-size: 3.6vw;
     }
   }

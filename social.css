@@ -1,8 +1,7 @@
-@font-face {
-  font-family: 'SF Pro Display';
-  src: url('fonts/SF-Pro-Display-Regular.otf') format('opentype');
+:root { font-family: 'Inter', 'Unbounded', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', 'Unbounded', sans-serif; }
 }
-
 body {
     background-color: #4C4652;
     color: #FFFFFF;
@@ -12,12 +11,12 @@ body {
 
 @keyframes fade-in {
     from {
-      transform: translateY(90%);
-      opacity: 0;
+      transform: scale(0.7);
+      filter: blur(10px);
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+      transform: scale(1);
+      filter: blur(0px);
     }
   }
 
@@ -29,7 +28,7 @@ body {
   
   .text {
 	text-align: left;
-	font-family: "SF Pro Display";
+	font-family: "Inter";
   }
   
   h1 {
@@ -49,24 +48,25 @@ body {
     top: 3%;
     right: 10%;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 38px;
     color: #FFFFFF;
-    font-family: 'SF Pro Display';
+    font-family: 'Inter';
     font-style: normal;
     cursor: pointer;
     z-index: 10001;
     opacity: 1;
+    margin-right: 2rem;
   }
   
   .social {
     position: fixed;
     top: 3%;
     right: 5%;
-    font-family: 'SF Pro Display';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 38px;
     cursor: default;
     z-index: 10001;
@@ -79,17 +79,18 @@ body {
 }
 
 .title {
-    font-family: 'SF Pro Display';
+    font-family: 'Unbounded';
     font-style: normal;
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 2rem;
     line-height: 43px;
     color: rgba(255, 255, 255, 0.4);
+    margin-top: 3vw;
 }
 
 .name {
-    font-family: SF Pro Display;
-    font-size: 40px;
+    font-family: 'Unbounded';
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 4vh;
     letter-spacing: 0em;
@@ -119,7 +120,7 @@ body {
 @media only screen and (max-width: 1170px) {
     #container {
       flex-direction: column;
-      height: 200vh;
+      height: 200vw;
     }
     
     .card {
@@ -129,13 +130,13 @@ body {
   .aboutme {
     top: 3%;
     left: 5%;
-    font-size: 25px;
+    font-size: 3vw;
   }
 
   .social {
     top: 3%;
     right: 5%;
-    font-size: 25px;
+    font-size: 3vw;
   }
   }
 
@@ -149,7 +150,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-	margin-top: 30px;
+	  margin-top: 1vw;
   }
   
   .popup {
