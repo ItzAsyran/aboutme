@@ -35,6 +35,30 @@ body {
   text-align: left;
   font-family: "Inter";
 }
+a {
+  display: flex;
+  align-items: center;
+}
+
+#credit {
+  margin-right: 10px;
+}
+
+#credit {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  z-index: 10001;
+}
+#credit:hover {
+  mix-blend-mode: difference;
+}
+
+#gif {
+  width: auto;
+  height: 20%;
+  z-index: 1;
+}
 
 h1 {
   font-size: 32px;
@@ -64,6 +88,7 @@ p {
   z-index: 4;
   transition: background-color 0.5s ease-in-out;
   pointer-events: none;
+  opacity: 0;
 }
 
 .image {
