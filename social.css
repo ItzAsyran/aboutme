@@ -242,9 +242,13 @@ p {
   }
 
   .image {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     width: auto\9; /* ie8 */
+  }
+
+  #credit {
+    font-size: 3vw;
   }
 }
 
