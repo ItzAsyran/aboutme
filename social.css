@@ -13,16 +13,26 @@ body {
   color: #fff;
   opacity: 1;
   cursor: none;
+  animation: bgColor 1s ease-in-out 0s 1;
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: #4C4652;
+  }
+  100% {
+    background-color: rgb(29, 37, 48);
+  }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    filter: blur(10px);
+    transform: translateY(100%);
   }
   to {
     opacity: 1;
-    filter: blur(0);
+    transform: translateY(0%);
   }
 }
 
@@ -155,7 +165,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding-top: 5vw;
-  animation: fade-in 1s cubic-bezier(.34,.9,.56,1) 0s 1;
+  animation: fade-in 1.5s cubic-bezier(.34,.9,.56,1) 0s 1;
 }
 
 .card {
