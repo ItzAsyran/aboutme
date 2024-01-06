@@ -206,7 +206,7 @@ p {
 }
 
 #discord:hover {
-  filter: drop-shadow(0px 0px 10px #a0a0ff);
+  filter: drop-shadow(0px 0px 10px #F6F6F6);
 }
 
 #youtube:hover,
