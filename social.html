@@ -16,7 +16,7 @@
     <div id="circle"></div>
     <header>
       <div class="top">
-        <a href="https://about.itzasyran.store"><h2 class="aboutme">About Me</h2></a>
+        <a href="index.html"><h2 class="aboutme">About Me</h2></a>
         <h2 class="social">Social</h2>
       </div>
     </header>
@@ -38,7 +38,6 @@
         <img id="github" src="social/github.svg" class="image" alt="Link">
       </div>
     </div>
-    <a href="https://twitter.com/chillin_chillo" target="_blank"><h4 id="credit">cred to Chillo</h4><img src="images/favicon.gif" id="gif"></a>
     <script>
       function openUrlInNewTab(url) {
         window.open(url, '_blank');
@@ -113,15 +112,7 @@
         }
 
         document.addEventListener('mousemove', updateCirclePosition);
-        circle.style.opacity = '1'; // Set initial opacity to 0
-
-        document.addEventListener('mouseleave', function() {
-          circle.style.opacity = '0';
-        });
-
-        document.addEventListener('mouseenter', function() {
-          circle.style.opacity = '1';
-        });
+        circle.style.opacity = '1';
 
   var cards = document.getElementsByClassName('image');
   var urls = {

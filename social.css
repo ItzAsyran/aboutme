@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(29, 37, 48);
+  background-color: rgb(15, 15, 15);
   color: #fff;
   opacity: 1;
   cursor: none;
@@ -21,7 +21,7 @@ body {
     background-color: #4C4652;
   }
   100% {
-    background-color: rgb(29, 37, 48);
+    background-color: rgb(15, 15, 15);
   }
 }
 
@@ -98,7 +98,7 @@ p {
   z-index: 4;
   transition: background-color 0.5s ease-in-out;
   pointer-events: none;
-  opacity: 1;
+  opacity: 0;
 }
 
 .image {
@@ -144,7 +144,7 @@ p {
   font-weight: 500;
   font-size: 2rem;
   line-height: 43px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
   margin-top: 3vw;
   z-index: 2;
   -webkit-user-select: none;
@@ -202,7 +202,7 @@ p {
 #youtube,
 #twitter,
 #github {
-  transition: filter 0.5s ease;
+  transition: filter 0.5s ease-in-out;
 }
 
 #discord:hover {
@@ -242,13 +242,9 @@ p {
   }
 
   .image {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     width: auto\9; /* ie8 */
-  }
-
-  #credit {
-    font-size: 3vw;
   }
 }
 
